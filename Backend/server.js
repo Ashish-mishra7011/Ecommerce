@@ -23,7 +23,10 @@ app.use(cors({
     origin: 'https://ecommerce-6l3o.vercel.app',
   credentials: true,
 }))
-
+app.options('*', cors({
+    origin: 'https://ecommerce-6l3o.vercel.app',
+  credentials: true,
+}));
 // api endpoints
 
 app.use('/api/user', userRouter)
