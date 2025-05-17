@@ -20,11 +20,11 @@ connectCloudinary()
 
 app.use(express.json())
 app.use(cors({
-    origin: 'https://ecommerce-6l3o.vercel.app',
+    origin: '*',
   credentials: true,
 }))
 app.options('*', cors({
-    origin: 'https://ecommerce-6l3o.vercel.app',
+    origin: '*',
   credentials: true,
 }));
 // api endpoints
