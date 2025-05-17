@@ -19,7 +19,10 @@ connectCloudinary()
 // middlewares
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: 'https://ecommerce-6l3o.vercel.app',
+  credentials: true,
+}))
 
 // api endpoints
 
