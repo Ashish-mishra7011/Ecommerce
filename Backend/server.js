@@ -20,7 +20,7 @@ connectCloudinary()
 
 app.use(express.json())
 app.use(cors({
-    origin: '*',
+    origin: 'https://ecommerce-wqi2.vercel.app/',
   credentials: true,
 }))
 app.options('*', cors({
