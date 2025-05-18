@@ -19,14 +19,14 @@ connectCloudinary()
 // middlewares
 
 app.use(express.json())
-app.use(cors({
-    origin: 'https://ecommerce-wqi2.vercel.app/',
-  credentials: true,
-}))
-app.options('*', cors({
-    origin: '*',
-  credentials: true,
-}));
+  app.use(cors({
+      origin: '*',
+    credentials: true,
+  }))
+  app.options('*', cors({
+      origin: '*',
+    credentials: true,
+  }));
 // api endpoints
 
 app.use('/api/user', userRouter)
